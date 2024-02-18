@@ -1,22 +1,22 @@
-/*Q2. Write a c program to store N elements in 1 D array (including positive ,negative and zero) , then separate and store them in different arrays(ie. Positive ,negative and zero).*/
+/*Q2. Write a c program to store P elements in 1 D array (including positive ,negative and zero) , then separate and store them in different arrays(ie. Positive ,negative and zero).*/
 #include <stdio.h>
 int main()
 {
-    int N, i, posCount = 0, negCount = 0, zeroCount = 0;
+    int P, i, posCount = 0, negCount = 0, zeroCount = 0;
     // Input the number of elements
     printf("Enter the number of elements: ");
-    scanf("%d", &N);
-    // Declare an array of size N
-    int arr[N];
-    // Input N elements into the array
-    printf("Enter %d elements:\n", N);
-    for (i = 0; i < N; i++)
+    scanf("%d", &P);
+    // Declare an array of size P
+    int arr[P];
+    // Input P elements into the array
+    printf("Enter %d elements:\P", P);
+    for (i = 0; i < P; i++)
     {
         printf("Element %d: ", i + 1);
         scanf("%d", &arr[i]);
     }
     // Count positive, negative, and zero elements
-    for (i = 0; i < N; i++)
+    for (i = 0; i < P; i++)
     {
         if (arr[i] > 0)
         {
@@ -35,7 +35,7 @@ int main()
     int posArr[posCount], negArr[negCount], zeroArr[zeroCount];
     // Separate elements into different arrays
     int posIndex = 0, negIndex = 0, zeroIndex = 0;
-    for (i = 0; i < N; i++)
+    for (i = 0; i < P; i++)
     {
         if (arr[i] > 0)
         {
